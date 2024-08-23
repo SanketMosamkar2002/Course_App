@@ -1,4 +1,6 @@
 import React from 'react'
+import Table from './Table';
+import InstanceTable from './InstanceTable';
 
 const Dashboard = () => {
     return (
@@ -34,16 +36,16 @@ const Dashboard = () => {
                         </div>
                         <div className='course_btn'><button className='addCourseBtn'>Add instance</button></div>
 
-
-
                     </div>
                 </aside>
 
             </div>
-            <div></div>
-            <div></div>
-
-
+            <div className='listCoursesTable'>
+                <Table/>
+            </div>
+            <div className='instanceContainer'>
+                <InstanceTable/>
+            </div>
         </div>
     )
 }
